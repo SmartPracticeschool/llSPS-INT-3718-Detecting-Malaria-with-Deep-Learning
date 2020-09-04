@@ -1,0 +1,167 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	min-height: 35rem;
+	position: relative;
+	font-family: 'Source Sans Pro';
+	font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Merriweather';
+	font-weight: 700;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #ea425c;
+	opacity: 0.7;
+	z-index: 1;
+}
+
+.masthead {
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 3rem;
+	z-index: 2;
+}
+
+.masthead .masthead-bg {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	min-height: 35rem;
+	height: 100%;
+	background-color: rgba(0, 46, 102, 0.8);
+	transform: skewY(4deg);
+	transform-origin: bottom right;
+}
+
+
+@media (min-width: 768px) {
+	.masthead {
+		height: 100%;
+		min-height: 0;
+		width: 40.5rem;
+		padding-bottom: 0;
+	}
+	.masthead .masthead-bg {
+		min-height: 0;
+		transform: skewX(-8deg);
+		transform-origin: top right;
+	}
+	.masthead .masthead-content {
+		padding-left: 3rem;
+		padding-right: 10rem;
+	}
+	.masthead .masthead-content h1 {
+		font-size: 3.5rem;
+	}
+	.masthead .masthead-content p {
+		font-size: 1.3rem;
+	}
+}
+
+
+.img-preview {
+	width: 256px;
+	height: 256px;
+	position: center;
+	border-radius: 20px;
+	margin-top: 1em;
+	border: solid 5px #192A56;
+	box-shadow: 10px -10px  rgba(0,0,0,0.6);
+	margin-bottom: 1em;
+	margin-left:20%;
+}
+
+.img-preview > div {
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	background-size: 256px 256px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+input[type='file'] {
+	display: none;
+}
+
+
+.upload-label {
+	display: inline-block;
+	padding: 12px 30px;
+	background: #39d2b4;
+	color: #fff;
+	font-size: 1em;
+	transition: all 0.4s;
+	cursor: pointer;
+}
+
+.upload-label:hover {
+	background: #34495e;
+	color: #39d2b4;
+}
+
+.loader {
+	border: 8px solid #f3f3f3; /* Light grey */
+	border-top: 8px solid #3498db; /* Blue */
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.home{
+	top: 10px;
+	left:50%;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+	text-decoration: none !important;
+	font-size:20px;
+}
+
+.home:hover {
+	background-color: #fff;
+	color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
